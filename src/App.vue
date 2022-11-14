@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="https://vuejs.org/images/logo.png" />
+    <UserList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserList from './components/SelectList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    UserList,
+  },
+};
 </script>
 
 <style>
@@ -21,8 +21,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+img {
+  width: 5em;
 }
 </style>
